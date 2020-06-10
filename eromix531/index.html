@@ -242,7 +242,7 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      font-size: 32px;
+      font-size: 24px;
       text-transform: uppercase;
       background: #39A7FB;
       width: 80%;
@@ -532,6 +532,7 @@
         event.preventDefault()
         $('.redirect').fadeOut(1000, function() {
           $('.redirect span').text('Смотреть');
+          $('.redirect span').css('font-size', '32px');
 
           $('.redirect').fadeIn(1000, function() {
             var url_redirect = $('#url_redirect').val();
