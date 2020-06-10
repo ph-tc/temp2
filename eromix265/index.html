@@ -1,0 +1,543 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN"
+  "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Эромикс18+</title>
+  <meta name="viewport"
+        content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="MobileOptimized" content="width"/>
+  <meta name="HandheldFriendly" content="true"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-touch-fullscreen" content="yes"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+  <script src="https://code.jquery.com/jquery-1.8.3.js"></script>
+  <style type="text/css">
+    html, body {
+      position: fixed;
+      -webkit-text-size-adjust: none;
+      text-size-adjust: none;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-appearance: none;
+    }
+
+    .left {
+      float: left;
+    }
+
+    .right {
+      float: right;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-family: arial, sans-serif;
+      background-color: #131313;
+      color: #000;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 319px) {
+      body {
+        font-size: 10px;
+      }
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 479px) {
+      body {
+        font-size: 12px;
+      }
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 639px) {
+      body {
+        font-size: 14px;
+      }
+    }
+
+    @media screen and (min-width: 640px) {
+      body {
+        font-size: 17px;
+      }
+    }
+
+    .clearfix::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    .blur {
+      position: relative;
+    }
+
+    .blur::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+      background-color: #fff;
+      opacity: 0.7;
+    }
+
+    /* header */
+    .header {
+      position: relative;
+      background: #000;
+      height: 62px;
+    }
+
+    .logo {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+    }
+
+    .logo-txt {
+      position: absolute;
+      width: 145px;
+      border-left: 1px solid #808080;
+      font-size: 13px;
+      line-height: 15px;
+      color: #fff;
+      top: 12px;
+      left: 127px;
+      padding: 11px 0;
+      height: 36px;
+      text-align: center;
+    }
+
+    .age {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #000;
+      font-size: 15px;
+      line-height: 15px;
+      padding: 12px 0;
+      font-weight: bold;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      background: #ff66ff;
+    }
+
+    .nav {
+      background: #661e67;
+      margin: 0 10px;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+    }
+
+    .nav span {
+      color: #fff;
+      display: inline-block;
+      text-align: center;
+      font-size: 11px;
+      padding: 10px 2px;
+      font-weight: bold;
+    }
+
+    .point {
+      background: #fff;
+      border-radius: 50%;
+      height: 5px;
+      width: 5px;
+      margin: 0 2px 2px;
+      padding: 0 !important;
+    }
+
+    /* end header */
+    .filename {
+      color: #fff;
+      font-size: 12px;
+      text-align: left;
+      padding: 5px 10px;
+    }
+
+    .fileload {
+      color: #ffffff;
+      font-size: 16px;
+      text-align: center;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -60px;
+      line-height: 26px;
+    }
+
+    .progress {
+      width: 100%;
+      height: 5px;
+      background: #2b2b2b;
+      text-align: left;
+    }
+
+    .progress div {
+      height: 5px;
+      width: 20%;
+      background: #ff66ff;
+      border-left: 1px solid #5e395b;
+      text-align: left;
+    }
+
+    .play-nav {
+      position: relative;
+      text-align: center;
+      color: #fff;
+      padding: 12px 0;
+      font-size: 10px;
+      line-height: 10px;
+      background: #090909;
+      border-bottom: 1px solid #151515;
+    }
+
+    .left-btn {
+      position: absolute;
+      top: 11px;
+      left: 10px;
+    }
+
+    .right-btn {
+      position: absolute;
+      top: 7px;
+      right: 10px;
+    }
+
+    .review {
+      position: relative;
+      height: 40px;
+    }
+
+    .view {
+      position: absolute;
+      top: 10px;
+      left: 15px;
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .view span {
+      font-size: 12px;
+      font-weight: normal;
+    }
+
+    .dislikes {
+      position: absolute;
+      top: 5px;
+      left: 140px;
+    }
+
+    .likes {
+      position: absolute;
+      top: 5px;
+      right: 15px;
+    }
+
+    /* footer */
+    .footer {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0;
+      z-index: 4;
+      background: #000;
+    }
+
+    .rules {
+      border-top: 1px solid #2b2b2b;
+      color: #676767;
+			font-size: 16px;
+			line-height: 0.8;
+			text-align: justify;
+			padding: 2px;
+    }
+
+    .rules a {
+      color: #676767;
+    }
+
+    /* end footer */
+
+    /* buttons block */
+    .but-wrap {
+      position: absolute;
+      top: 53%;
+      left: 0;
+      z-index: 555;
+      right: 0;
+      padding: 0;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+    }
+
+    .main-button {
+      background-color: #4d4d4d; /* Old browsers */
+      width: 90%;
+      margin: 0 auto;
+      display: block;
+      border: none;
+      border: 2px solid #fff;
+      border-radius: 5px;
+      position: relative;
+      padding: 0;
+      height: 30vh;
+    }
+
+    .main-button span {
+      position: relative;
+      font-size: 175%;
+      font-weight: 700;
+      top: 50%;
+      color: #fff;
+      display: inline-block;
+      transform: translateY(-50%);
+    }
+
+    .main-button span::after {
+      content: '';
+      border: 10px solid transparent;
+      border-left: 16px solid #fff;
+      display: block;
+      position: absolute;
+      top: 1px;
+      right: -40px;
+    }
+
+    .price {
+      color: #666666;
+      background: #131313;
+      font-size: 17px;
+      padding: 1px 2px;
+      line-height: 17px;
+      margin: 0 auto;
+      display: inline-block;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+		.header > span {
+			position: absolute;
+			top: 16px;
+			left: 10px;
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 30px;
+			color: #fff;
+			text-transform: uppercase;
+		}
+    /* end buttons block */
+    @media (min-width: 360px) {
+      .nav span {
+        padding: 10px 7px;
+      }
+    }
+
+    @media (min-width: 414px) {
+      .nav span {
+        padding: 10px 12px;
+      }
+    }
+
+    @media (min-width: 480px) {
+      .nav span {
+        padding: 10px 20px;
+      }
+    }
+
+    @media (min-width: 565px) {
+      .nav span {
+        padding: 10px 30px;
+      }
+    }
+
+    @media (max-height: 560px) and (orientation: portrait) {
+      .logo {
+        top: 10px;
+      }
+
+      .nav {
+        top: 50px;
+      }
+    }
+
+    @media (max-height: 520px) and (orientation: portrait) {
+      .fileload {
+        top: -53px;
+      }
+    }
+
+    @media (max-height: 575px) and (orientation: portrait) {
+      .filename, .review {
+        display: none;
+      }
+    }
+
+    @media (max-height: 450px) and (orientation: portrait) {
+      .nav {
+        display: none;
+      }
+    }
+
+    @media (max-height: 380px) and (orientation: portrait) {
+      .but-wrap {
+        top: 51%;
+      }
+    }
+
+    @media (max-height: 460px), (orientation: landscape) {
+      .fileload, .review {
+        display: none;
+      }
+
+      .but-wrap {
+        top: 55%;
+      }
+
+      .player {
+        display: none;
+      }
+    }
+
+    @media (max-height: 460px), (max-height: 370px) and (orientation: landscape) {
+      .nav {
+        display: none;
+      }
+
+      .logo {
+        top: 10px;
+      }
+
+      .nav {
+        top: 50px;
+      }
+
+      .but-wrap {
+        top: 49%;
+      }
+    }
+
+    @media (max-height: 460px), (max-height: 290px) and (orientation: landscape) {
+      .filename {
+        display: none;
+      }
+
+      .but-wrap {
+        top: 45%;
+      }
+    }
+
+    @media (max-height: 460px), (max-height: 210px) and (orientation: landscape) {
+      .but-wrap {
+        top: 51%;
+      }
+    }
+
+    /* fix for ifhone 5s */
+    @media (max-height: 460px), (device-height: 568px) and (orientation: landscape) {
+
+      .filename {
+        display: none;
+      }
+
+      .player {
+        display: none;
+      }
+
+      .logo {
+        top: 10px;
+        height: 25px;
+      }
+
+      .logo-txt {
+        padding: 8px 0;
+        height: 28px;
+      }
+      .header > span{
+        top: 13px;
+      }
+      .age {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+<div class="header" id="header">
+  <span>Эро<span style="color: #ff66ff">микс</span>18+</span>
+  <div class="logo-txt">ЭРОТИКА ОНЛАЙН</div>
+  <div class="age">18+</div>
+</div><!-- end header -->
+<div class="filename">Filename_021399194.avi</div>
+
+
+<div class="but-wrap">
+
+<!--  <a id="preland-btn" type="submit" class="main-button redirect">-->
+<!--    <span>Смотреть</span>-->
+<!--  </a>-->
+<!--  <p class="price">Доступ: 18 лет и старше</p>-->
+  <a id="sign" type="submit" class="main-button redirect" href="{{ url }}">
+    <span>Пропустить рекламу</span>
+  </a>
+  <p class="price">Доступ: 18 лет и старше</p>
+  <input id="url_redirect" type="hidden" value="{{params}}" />
+
+  <script type="text/javascript">
+    $('.redirect').on('click', function(event){
+      event.preventDefault()
+      $('.redirect').fadeOut(1000, function() {
+        $('.redirect span').text('Смотреть');
+
+        $('.redirect').fadeIn(1000, function() {
+          var url_redirect = $('#url_redirect').val();
+          window.location.href = url_redirect;
+        })
+      })
+
+    })
+  </script>
+</div><!-- end but-wrap -->
+
+<div class="footer" id="footer">
+  <div class="player">
+    <div class="progress">
+      <div></div>
+    </div>
+    <div class="play-nav">
+      <img class="left-btn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG0AAAAOCAYAAAAlmJKiAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gUfCgAn/1/oLQAAAdBJREFUWMPtmL1rVEEUxX83BLSw0UZECwkRhIhYGHW7YKEogqBWy1qIHyBio2gjQvCf0EZiGdhKbFMJyoJiJQqC+FEYBJcENY0h+dnchWeIGmVJZskeeMzjzPCYO2fOu3cGE1SwHLdWUOvqI3VEva3uYL2jZNHUU+oP9Zt6NKf1WT3bF61A0dTT6nxO5Yu6Vb1a4S70yPqG2lCb6qd8mslFT4um7lcvqufVW+kw1a/qjLpT3aweSO67uqcHBBv39xj/L+EKEu31MkGdU6fUWfVYtifUM9n/oHDRGv4djX/97kBBMW4E2sBl4BJwPCImkh8EpoEFYBJ4BXwEjhT+dzzZpTG/IDqOioioOm0ptwq78j2wGBFDS/gnwCiwCWgA94ErwCGgHhGD3c7xq61srVZb8dhWqxUDhe3MP22SRWA23zcA8/3qce1z2rusrGpZlAx3nKbOqbvVN+pC9r9U24WvbXMFOa3ZyzktgG3AU+AZ8EIdA+bSVUPALuB65rkR4HHhnnjYpTHFOq2u3lXvqZM5hRl1Otu96j51u/o2HTfWL/nLOlxfqwTXVrdkuf+hE3D/cF3mNdaNiuMOV0S807/GKvvC+Kb6XB1VJ9SDrHP8BPgU/Odks1ASAAAAAElFTkSuQmCC" alt=""/>
+      <img class="right-btn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAAAWCAYAAAB5VTpOAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gUfCgEaviyVfQAAAdNJREFUWMPt2L9KHFEUBvDjGiIGbFW0CahpFIOVVZo0FoIPYGEXBAuDFnbaiE9hFzC+gF0gxbKisk+QSkghGkmXwkjIL8WewGadbP5CdDIHTjHf+b4L95u5c8+9ET8IjGEPzcw9jMX/GljSineZsFTW+dY6Jl/DKp6jP+EnEXESEQ8zTxIL9Cd3FbVb8PJuxG9z0YvtrF3hNVbwHpttvM3EVpJzlZpt9N4mM37VkG/4WEvsGWZwiEvUMdXGm0rsMjkzqYG1f23IX9NjER8x3/bFjHcZYPzrF4H51C6WyZAe7OMNhjvIo3iaOdpRG07NPnpKY0iCy/iMuTZsHed4m3mO9bb6XGqWb8MP9Y/1mMyt9QWu0UBfkjbwAVt4nLmV2EZy+lJznWMsYfIu9xkHaU4jJzuR+ADOsFOg2cnaQD5PpLaRYx3cZUOauCjAp7MRWyioLWRtuqB2gWYpGrMqWoZcRMRg55KJiNOI+BQRswW62ayddi6ZiBjMMe/skql+ql3MqbbdqjGrWveu+vZdZigi7kfECGYioh4RR9873EXEUUTUkzuS2qEyXQRVx/+Cs8yNCyLs4hgPMo+xW/oLouoKsRX3foJzGBEvI+JRPr9KrJTxBXqpYLYHAuSIAAAAAElFTkSuQmCC" alt=""/>
+      02:12 / 16:45
+    </div>
+    <div class="review">
+      <div class="view">223,991 <span>views</span></div>
+      <img class="dislikes" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAAeCAYAAAB0ba1yAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gUfCTohMdMtOAAAApBJREFUWMPtmM9K41AUh7+bPySNoGJFBBHd2C7cuXDjtptu3PgS4kuodCkufAAfQtcu+woFpRXTCEohpLRam5ImmVVDBWeSaZORmclvl9wk9345v5NzcsXu7m7IN6jRaAiA75pf4j9VDp6D5+A5+D8pZZ6bK5UK5XKZ6+trXNfNZIGbm5ssLy/jui7NZpP19XWKxSJCiC+vHwwGtNttgiDIBnxra4uLiwtUVeXu7o6Hh4dMwJeWltA0DVmW0XWdjY2Nn0ID6LqO7/tYlpW+1XVdp1aroaoqg8EA27Yzs+QkckEQIMvyL6EnKhaLqKqaPnilUmFvbw+ATqeD4zh/JC/DMCQM4xs9WZYpFArpghuGwfHxcXTc7/cTLSYNJYn2RHERj83xtbU1SqUStm1zf3/P2dkZ29vb0fjOzg5HR0dYloUQAkmSsG2bVqv1rfBzg9dqNQ4ODrAsi5OTE6rV6qfxhYUFzs/PP50bj8ecnp5yc3OTidWTwM+d46urqwBomsbi4mIiWyuKwv7+fuoRFkIkjriiKPOBT0CDICAIgsT53Ov1UgH3PC+a3/f9xM7o9/vzWX0aNGk5Aeh2u6mAPz09USgU8DwP13VxHIeVlZVo3Pd9np+fGY1GkSs8z2M4HKYDLoRIXE6A1Gq753lR1AFM08QwDHRdB2A4HM40l/Q7H5a4NnBaLy8vmTU0r6+viXN5ZvBpa0uShCTFv6uPjw9M08ysnjuOw9vbW/T1ngU+lkLTtKhNfX9/Zzwexz709vaWTqeTaQdnmiZhGCLLcmzpminH6/U6qqrSbrcxTZOrqysODw9RFOXLfG80GlxeXmbexY1GIx4fHzEMY6Y/Q5HvsuY7MDl4Dp6D5+A5+F+rH0JuGLl6/bM+AAAAAElFTkSuQmCC" alt=""/>
+      <img class="likes" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAAAeCAYAAACyqDnLAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gUfCTktE0gy0AAAArlJREFUaN7tl79rFEEUx78TFSQgrpWCFmejIELOzvIQG0HIaS3mGhury1+w5h/wsLGNle3ZWl1AsNPcVUEREq2EFBejlcJ9LHyjk2U3O/cDbOYLy87sd97b2e+8ffNGSkhISEhISEhISFgsgPvABrCc1JhfzCvAT/5gJSkyn5jLwBsT8xA4H2uYAV0gL+HaQB8YADmQTcPP4K9r3ADolNgOgE2gUeByoL1gQR/wDzvAUoxRA9j2ViUfUMR2LF8h5nH+eiV8z7iW9XeBccGuY1xrgWKeAT4E83gbY9SyyY0rBN21x12LYt9vx/Al76scbwvr0bTLI7MIxOa8ae2GcWOgP6eAF4E7wA3rvyws7CHwyN5/C7gNXC866dlkmkVBbaLFZ/6jenV8RVo5zp+P3kHADwLBQ0HL2o05BX1tfj4BV4EJ9fjl09KSJDnn1iVdds4NS97RtPtB8OxbwNXx0/pbKeF9eyUYmwW+9iR1Jb2QtBbk12wGTS/Y/bSkc5KIsDkpqfVXUBP1oMZoWNGO5Rfl75UJ3JfUlrQlyW+iI0lPTOyOpM0ZBJ0E90mkoJI09srGolnRjuUX4s85t2f5bc2idUvStgnpo/ueiTnLbh8KeEKSi7TbjxV0GPxiHmcDro6f1t+ohM+CCJRzbk/ShuW8vkXsM4taL/rMadSvnbVjHX098stXwVLBMKgN/e8kSaM6PiiTciCLGL9l7Zbf5X1+Ki6QlUdtSRsFv43Cgswq7GSK8Z+rdrmF16FBOdadtw4tzGsA7Ab9Zp1NxC7/3my/ADcjd/nvwKUqh3nFSakVnGx6JSebSt589sOSJsJfJzgpdSvKr7xYxFtNmhdPV1MIumMi7QPXgvP7cXiuIE8kHBX0qaRVSR8l3ZW0LumhpFMl+RRJ7yQ9ds79SOolJCQkJCQkJCT8L/wGul25f1CR6XQAAAAASUVORK5CYII=" alt=""/>
+
+    </div>
+  </div><!-- end player -->
+  <div class="rules">
+    Нажимая кнопку, вы полностью подтверждаете, что вам исполнилось 18 лет. На сайте размещены материалы только для личного использования. Отключение видеозаписи грозит неудачным просмотром видео.
+  </div>
+</div><!-- end footer -->
+{{ pixel|test2 }}
+</body>
+</html>

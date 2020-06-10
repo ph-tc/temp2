@@ -1,0 +1,656 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN"
+  "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Эромикс18+</title>
+  <meta name="viewport"
+        content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="MobileOptimized" content="width"/>
+  <meta name="HandheldFriendly" content="true"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-touch-fullscreen" content="yes"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+  <script src="https://code.jquery.com/jquery-1.8.3.js"></script>
+  <style type="text/css">
+    html, body {
+      position: fixed;
+      -webkit-text-size-adjust: none;
+      text-size-adjust: none;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-appearance: none;
+    }
+
+    .left {
+      float: left;
+    }
+
+    .right {
+      float: right;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-family: arial, sans-serif;
+      background-color: #131313;
+      color: #000;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 319px) {
+      body {
+        font-size: 10px;
+      }
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 479px) {
+      body {
+        font-size: 12px;
+      }
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 639px) {
+      body {
+        font-size: 14px;
+      }
+    }
+
+    @media screen and (min-width: 640px) {
+      body {
+        font-size: 17px;
+      }
+    }
+
+    .clearfix::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    .blur {
+      position: relative;
+    }
+
+    .blur::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+      background-color: #fff;
+      opacity: 0.7;
+    }
+
+    /* header */
+    .header {
+      position: relative;
+      background: #3a3b3f;
+      height: 50px;
+    }
+
+    .hamb {
+      position: absolute;
+      top: 16px;
+      left: 5px;
+      width: 25px;
+    }
+
+    .logo {
+      position: absolute;
+      top: 5px;
+      left: 40px;
+      line-height: 40px;
+			color: #fff;
+			font-size: 14px;
+    }
+
+    .text {
+      color: #fff;
+      position: absolute;
+      top: 16px;
+      left: 135px;
+      font-size: 10px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    .age {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      color: #fff;
+      font-size: 10px;
+      line-height: 10px;
+      font-weight: bold;
+    }
+
+    .head-right {
+      position: absolute;
+      top: 12px;
+      right: 20px;
+      height: 27px;
+    }
+
+    .search {
+      font-style: italic;
+      text-align: left;
+      font-size: 12px;
+      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gYNFTcitfi9HwAAAfBJREFUOMut1D1IV2EUx/HPX5AsCHrhYgWR1FBDRQhFDVab0BIhGXGvSw061JQNQQS2pmNIDdJwbw29EZEUDjVECGGttRRELV01ehMjiJYj/LmaL9hZ7nnuec6X5/md85yaOaxMs/04ju1oxje8wzCGkyL/ZR6rVWBb0Y9j8+SM4UJS5CMLQss0O4xb2IBxDGEk/BVoQxd2R0pvUuQD/4SWabYFL5HgEc4mRf5+DlmacBnn41dHUuT3ZkHLNKvhPo6GZh1JkU/Pp1mZZr24ggm0JkX+oT7egL0BHEf3QkBIirw/brQePdV4A06GP5QU+UeLt8H4tpdp1lCF7gj/iaXZKL6iBaur0Obwx5cI/Y5JrMHaKvRH+I1LhDagCdOYqgZmWufAEqE745af8KUKfRz+6argC9iJyB9Livx3FfoAb7EHFxdDK9OsDd34g6uzdEmKfArnYt1XplnPAsCDuBMVH0yK/Pl8b/8S+mJ5GzfwIorQGBp24AxWxr5n6Kr2d3VKnYopNdMiE1GEVdhUt/U69oVkr9CeFPl4vab1z28onu0AXkd8W/TiG9zEoaTIu9EZtWjFwzLNNs550jn0WxfAn5isVrlMs80xA3bFnD2SFPnnmmVamWYtuBsnHkPnsqEBbo6x2Yqn/wVaJ8U1jP4Fd5CSVvzl6ykAAAAASUVORK5CYII=") 6px 6px / auto 15px no-repeat #28282a;
+      border: 1px solid #626264;
+      color: #606064;
+      border-radius: 50%;
+      height: 29px;
+      width: 29px;
+      position: absolute;
+      top: 10px;
+      right: 100px;
+    }
+
+    .nav {
+      position: relative;
+      background: #eb5b5b;
+    }
+
+    .nav span {
+      color: #fff;
+      display: inline-block;
+      text-align: center;
+      font-size: 10px;
+      padding: 8px 5px;
+      font-weight: bold;
+    }
+
+    /* end header */
+    .info {
+      border-bottom: 1px solid #292929;
+      background: #0c0c0e;
+      font-size: 10px;
+      line-height: 10px;
+      text-align: left;
+    }
+
+    div.left {
+      min-width: 125px;
+      border-right: 1px solid #292929;
+      padding: 5px 10px;
+    }
+
+    div.right {
+      padding: 5px 0px;
+      text-align: left;
+    }
+
+    .filename {
+      color: #eb5a5d;
+      padding: 1px 0;
+      display: block;
+    }
+
+    .load {
+      color: #4f4f51;
+      padding: 1px 0;
+      display: block;
+    }
+
+    .info-head {
+      color: #fff;
+      padding: 1px 0;
+      display: block;
+      font-weight: bold;
+    }
+
+    span.left {
+      padding: 0 5px;
+    }
+
+    .fileload {
+      color: #c6c6c6;
+      font-size: 26px;
+      text-align: center;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -30px;
+      line-height: 26px;
+    }
+
+    .progress {
+      width: 100%;
+      height: 5px;
+      background: #1e1e1e;
+      text-align: left;
+      position: relative;
+      z-index: 5;
+    }
+
+    .progress div.fider {
+      background: #ff0101;
+      height: 100%;
+      width: 80%;
+      border-right: 1px solid #a85150;
+    }
+
+    .progress div {
+      width: 33%;
+      height: 5px;
+      background: #6d6d6d;
+      border-right: 1px solid #2c2c2c;
+    }
+
+    .play-nav {
+      position: relative;
+      text-align: center;
+      color: #fff;
+      padding: 12px 0;
+      font-size: 10px;
+      line-height: 10px;
+      background: #090909;
+      border-bottom: 1px solid #151515;
+      height: 32px;
+    }
+
+    .left-btn {
+      position: absolute;
+      top: 8px;
+      left: 30px;
+    }
+
+    .right-btn {
+      position: absolute;
+      top: 8px;
+      right: 10px;
+    }
+
+    /* footer */
+    .footer {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0;
+      z-index: 4;
+      background: #1a1a1a;
+      font-size: 9px;
+    }
+
+    .rules {
+			padding: 2px;
+      color: #676767;
+      font-size: 17px;
+      line-height: 0.8;
+			text-align: justify;
+    }
+
+    .rules a {
+      color: #676767;
+    }
+
+    /* end footer */
+
+    /* buttons block */
+    .but-wrap {
+      position: absolute;
+      top: 53%;
+      left: 0;
+      z-index: 555;
+      right: 0;
+      padding: 0;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+    }
+
+    .main-button {
+      background-color: #4d4d4d; /* Old browsers */
+      width: 80%;
+      margin: 0 auto;
+      display: block;
+      border: none;
+      border-radius: 5px;
+      position: relative;
+      padding: 0;
+      height: 30vh;
+    }
+
+    .main-button span {
+      position: relative;
+      font-size: 190%;
+      font-weight: 700;
+      top: 50%;
+      color: #fff;
+      display: inline-block;
+      transform: translateY(-50%);
+    }
+
+    .main-button span::before {
+      content: '';
+      border: 10px solid transparent;
+      border-left: 16px solid #fff;
+      display: block;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      right: -45px;
+    }
+
+    /*
+    .main-button span::after{content:'';border:10px solid transparent;border-left:16px solid #4d4d4d;display:block;position:absolute;top:1px;right:-40px;}
+    */
+    .price {
+      font-size: 17px;
+      color: #666666;
+      padding: 1px 2px;
+      line-height: 21px;
+      margin: 0 auto;
+      display: inline-block;
+      font-family: 'Open Sans', sans-serif;
+			background-color: #131313;
+    }
+
+    /* end buttons block */
+
+    @media (min-width: 360px) {
+      .nav span {
+        padding: 8px 7px;
+      }
+    }
+
+    @media (min-width: 414px) {
+      .nav span {
+        padding: 8px 15px;
+      }
+    }
+
+    @media (min-width: 480px) {
+      .nav span {
+        padding: 8px 5px;
+      }
+    }
+
+    @media (min-width: 530px) {
+      .nav span {
+        padding: 8px 10px;
+      }
+    }
+
+    @media (min-width: 600px) {
+      .nav span {
+        padding: 8px 15px;
+      }
+    }
+
+    @media (min-height: 460px) and (orientation: portrait) {
+      .rules {
+        margin-top: 30px;
+      }
+    }
+
+    @media (min-height: 550px) and (orientation: portrait) {
+      .rules {
+        margin-top: 70px;
+      }
+    }
+
+    @media (min-height: 600px) and (orientation: portrait) {
+      .rules {
+        margin-top: 85px;
+      }
+    }
+
+    @media (max-height: 540px) and (orientation: portrait) {
+      .fileload {
+        top: -45px;
+      }
+    }
+
+    @media (max-height: 520px) and (orientation: portrait) {
+      .fileload {
+        top: -40px;
+      }
+    }
+
+    @media (max-height: 500px) and (orientation: portrait) {
+      .fileload {
+        top: -35px;
+      }
+    }
+
+    @media (max-height: 480px) and (orientation: portrait) {
+      .fileload {
+        top: -30px;
+      }
+    }
+
+    @media (max-height: 430px) and (orientation: portrait) {
+      .nav {
+        display: none;
+      }
+
+      .but-wrap {
+        top: 53%;
+      }
+
+      .fileload {
+        display: none;
+      }
+    }
+
+    @media (max-height: 360px) and (orientation: portrait) {
+      .main-button span {
+        top: 12%;
+      }
+    }
+
+    @media (orientation: portrait) {
+      .search span, .port {
+        display: none;
+      }
+    }
+
+    @media (orientation: landscape) {
+      .text {
+        top: 11px;
+      }
+
+      .search {
+        padding: 6px 8px;
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gYNFTcitfi9HwAAAfBJREFUOMut1D1IV2EUx/HPX5AsCHrhYgWR1FBDRQhFDVab0BIhGXGvSw061JQNQQS2pmNIDdJwbw29EZEUDjVECGGttRRELV01ehMjiJYj/LmaL9hZ7nnuec6X5/md85yaOaxMs/04ju1oxje8wzCGkyL/ZR6rVWBb0Y9j8+SM4UJS5CMLQss0O4xb2IBxDGEk/BVoQxd2R0pvUuQD/4SWabYFL5HgEc4mRf5+DlmacBnn41dHUuT3ZkHLNKvhPo6GZh1JkU/Pp1mZZr24ggm0JkX+oT7egL0BHEf3QkBIirw/brQePdV4A06GP5QU+UeLt8H4tpdp1lCF7gj/iaXZKL6iBaur0Obwx5cI/Y5JrMHaKvRH+I1LhDagCdOYqgZmWufAEqE745af8KUKfRz+6argC9iJyB9Livx3FfoAb7EHFxdDK9OsDd34g6uzdEmKfArnYt1XplnPAsCDuBMVH0yK/Pl8b/8S+mJ5GzfwIorQGBp24AxWxr5n6Kr2d3VKnYopNdMiE1GEVdhUt/U69oVkr9CeFPl4vab1z28onu0AXkd8W/TiG9zEoaTIu9EZtWjFwzLNNs550jn0WxfAn5isVrlMs80xA3bFnD2SFPnnmmVamWYtuBsnHkPnsqEBbo6x2Yqn/wVaJ8U1jP4Fd5CSVvzl6ykAAAAASUVORK5CYII=") 127px 5px / auto 15px no-repeat #28282a;
+        border-radius: 20px;
+        height: 27px;
+        width: 150px;
+        top: 9px;
+        right: 120px;
+      }
+
+      .nav {
+        display: none;
+      }
+
+      .logo {
+        height: 35px;
+        top: 3px;
+      }
+
+      .hamb {
+        top: 14px;
+        left: 10px;
+        width: 23px
+      }
+
+      .head-right {
+        top: 10px;
+        right: 22px;
+        height: 25px;
+      }
+
+      .header {
+        height: 42px;
+      }
+
+      div.left {
+        padding: 5px 10px 5px 40px;
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAgCAYAAACYTcH3AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gYOABY1suzjTgAABMlJREFUWMOdmHuIlkUUxp9Z763mZuYtb6umpqGFSmrlalb2jxmkJdgFs8jsAoVkBl0MWREK6Y8o7EJYQUbGZpYmrZdqXTQvZJqaCZuumimGuVZr6/76o2dhGt9v/b4GXt6dM885c94zz5xzvg0qYAA9JV0rabikIZIu9dJxSXskfSepOoRwtACbt0oqDSG8lq/C7UAl8DfQCNQC3wAVfqosawTqgbXAbXnafpB/x6QLAccD2wz+CpgFDACKMrBFXpsFfG2drUBZHg5tAtblWgzAIhusBMZmYOY4IlXA7Iz164D1trE46wMi7LPA4ayFdg59I/BIDkff8iYf+AF4M8dGj3n9c6A4B+ZV4KdU2AL4FPgTmJBDsczGpyScArg+h85E4A9HqiS9FMBp4KVUaYmNjmsmpPOBoxnyY8BTzeiVAQ3ATmA6MBK4DzgM7Ac6x+BJdmRmJOsNXJYYnW6jfSNZP+AcMC3B9gD6R/OZnD9WAr1ipbZADfCZ56OALcBZoA5YCrT3WrG/bg9wBzAV2GvZRcaUAMt83A3ADmCM11YCv/mm9s0K4Sx7WQp0B04C64ApwEPA78CHQDC+D7DGOaXef/eJrvgnwHFghiO+Gjhlfgzw5Zia6xrvAj72vBw4CrSOMJPt7JAM8l2eyIYbOzGStTQ3yj2vAHY3fVzTKJI01M9Sy/pL2h9COBvhdvjdM1YOIdSGENL80F1So6TdEa5B0gFJfSxa6nJyVerMREl1kqos2yhpNDA4wt0tqSHeoJnxvZ25N4rMUEljJG2wqErSGUk3pse0HKiO5sVO/aeAN0w4gLkFFL8nrLMKeNt5pBJoF2E2A8tTxW+BZYnsYmAhsN1GpuaoWzv9lOUormtcd55Lsy/wPrAlVdoLLCmwlegAHAFW+JYdAjoUaOMVYF/KmSJJ51TYaGuiVvv8u0pqU6CN8/ZsaSKVZHg+WtJ4SaclVcS3JoRwHJgnqdyi+SGEE4l+f0kzJHWR9GUIoSLZosQX5z9Kq4HKRPaCCVjrbHkyq3ACg4BBGfIJTpRHnMMA3gFaRJgNwKpU8UUXuVZRhQWY7WR1ibnxC9AxDy4Uu7SsaCItcItt3uN5a+BX4PlcLcGIqLfYlWBKjbk5D2dGGjs0ka8HKhLMDSmBN7uhnmFZo7kUj9a5SJcx6v3ulMg7mn9NSfSYpC1ZX1PuxFTsig3wDNDJRbESOBCFPQCPOnFtBZ5uqmU+2o3Aj7bVG1hgm2O9Rx2wMFdou7n6LvL8cbcPp/2uAUZF+Ndded91C1oPfAS09HovoNqYs8AZ4GGvLQb+Aro2d9ZzE+4MBB4A7oyJG0VuWgbvJict7Di3IT0Trjx5IeK1cE2qAbo0g5vjiLVK5DXAgmb0ugIHfaWL8knR3Zzat6btZkZ7OiySdfdx3N+MI9uBn5s9ngzFwU52+4CrM9bb+LfSITfUd7lR2pOVh4BrTOZDwEAVOtzBbXL/Oi+j4nZxgaxzn/sFUJpg2vuXRIOd76H/O4BWzs5/+6vmAf0STOumJjyuSb7qtdZdkPIr1wh5OHWFpLlOVO0k/SBpm9+Ho3b0Skkj3MKekfSepJdDCPvzDUAoIFKdJd0kaZKkYZJ6S+ogCVffg/6XyFpX6ROFnsY/xfFxfNTW3m0AAAAASUVORK5CYII=") 8px 50% / auto 22px no-repeat;
+      }
+
+      span.left {
+        padding: 0 10px;
+      }
+    }
+
+    @media (max-height: 400px) and (orientation: landscape) {
+      .player {
+        display: none;
+      }
+    }
+
+    @media (max-height: 355px) and (orientation: landscape) {
+      .fileload {
+        display: none;
+      }
+    }
+
+    @media (max-height: 279px) and (orientation: landscape) {
+      .but-wrap {
+        top: 56%;
+      }
+    }
+
+    @media (max-height: 235px) and (orientation: landscape) {
+      .but-wrap {
+        top: 51%;
+      }
+
+      .main-button span {
+        top: 10%;
+      }
+
+      .info {
+        display: none;
+      }
+    }
+
+    /* fix for ifhone 5s */
+    @media (device-height: 568px) and (orientation: landscape) {
+      body {
+        padding: 43px 0;
+      }
+
+      .player, .nav, .info {
+        display: none;
+      }
+
+      .footer {
+        bottom: 45px;
+      }
+
+      .but-wrap {
+        top: 175px;
+      }
+
+      .age {
+        width: 35px;
+        height: 35px;
+      }
+
+      .header {
+        height: 43px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+<div class="header" id="header">
+  <img class="hamb" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAYCAYAAACfpi8JAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gYNFRUw4fOKdwAAAGhJREFUSMft1LENgmAUhdHzk58RrO3Zxwo3YAmWYD9rZgC1oZVgYtTinvbd7iVfmfvrBSPOqF5rtntxzAML7jubFTeMFQM6n1fQHth1GBp/omLC6cevmUTEu9FJWVPWlDUiZU1Zv1zWJ7hOLlHYKVsVAAAAAElFTkSuQmCC" alt=""/>
+	<span class="logo">Эромикс18+</span>
+  <img class="head-right" src="data:image/png;base64,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" alt=""/>
+  <div class="search">
+    <span>Поиск</span>
+  </div>
+  <span class="text">эротика <br/> онлайн</span>
+  <div class="age">18+</div>
+</div><!-- end header -->
+<div class="info clearfix">
+  <div class="left">
+    <span class="filename">File_name8384771.avi</span>
+    <span class="load">Добавлен: позавчера</span>
+  </div>
+  <div class="right">
+		<span class="left">
+			<span class="info-head">10 928</span>
+			<span class="load">ПРОСМОТРЫ</span>
+		</span>
+    <span class="left">
+			<span class="info-head">100%</span>
+			<span class="load">РЕЙТИНГ</span>
+		</span>
+    <span class="left">
+			<span class="info-head">142</span>
+			<span class="load">ГОЛОСА</span>
+		</span>
+    <span class="left port">
+			<span class="info-head">18:34</span>
+			<span class="load">ДЛИТЕЛЬНОСТЬ</span>
+		</span>
+  </div>
+</div><!-- end info -->
+
+
+<div class="but-wrap">
+  <div class="fileload">Приятного просмотра!</div>
+
+  <a id="sign" type="submit" class="main-button redirect" href="{{ url }}">
+    <span>Пропустить<br/>рекламу</span>
+  </a>
+  <p class="price">Доступ: 18 лет и старше</p>
+  <input id="url_redirect" type="hidden" value="{{params}}" />
+
+  <script type="text/javascript">
+    $('.redirect').on('click', function(event){
+      event.preventDefault()
+      $('.redirect').fadeOut(1000, function() {
+        $('.redirect span').text('Смотреть');
+
+        $('.redirect').fadeIn(1000, function() {
+          var url_redirect = $('#url_redirect').val();
+          window.location.href = url_redirect;
+        })
+      })
+
+    })
+  </script>
+</div><!-- end but-wrap -->
+
+<div class="footer" id="footer">
+  <div class="player">
+    <div class="progress">
+      <div>
+        <div class="fider"></div>
+      </div>
+    </div>
+    <div class="play-nav">
+      <img class="left-btn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAQCAYAAABDebxFAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gYOACoebaNj8QAAAbBJREFUSMfdli/LKkEUxn/jXFhdxWwxWDYIdotmg0kEQcSigtv2A4hBTeInUDEYTH4A44LVtGFRi9hlg8hicec24cL9s2+44L4HDsyBZ8IPzjPPUCwWlW3b6nA4qMPhoGzbVsViUQHv/ovmf5T6V0spla7rKow2RsTKMAwWiwXdbjeU/keU4LrdLs1mk3Q6jeM43wcwl8sxGAwoFArEYl9buo8EXK/X77MQgmw2SyqV+qO+Vqvhui7H4xEpJY1Gg91uh+d5nwmYz+dDa03TpNVqcb1eGQ6HmKZJuVymUqlgWVa0PPi7SiaTSCkxDIPVakUikUAIAUA8Ho8+4Gw2QwhBvV5H13UAXNfFsiw8zyMWdUApJZlM5v34KKW43W48n0+AaANKKZlOp5TLZYQQ+L4PQKlUYjweI6WMNqCmaTweD4IgwHVdGo0G+/0epRRCCDRN+0wPuq4bKiZ832c0GnE6nd6xMJlMqFarbLdbfN//TMB2ux066F+vF5vN5j17nvdLjkZiRS+XC51Oh/l8zv1+/9LdSHlwuVzS7/dxHIcgCL7fZxvgfD7T6/XQNC2U/ictar/vuU1KwQAAAABJRU5ErkJggg==" alt=""/>
+      <img class="right-btn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAQCAYAAABKkhw/AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gYOACwlivItUwAAAGJJREFUSMdjPHPmzH8GGgITExNGapqHy73o9uBSx8QwwsCI8zALLZIfrbMJMe5FlkN2z2iSHlFJeigAcrIdsp7RJD3q4dE8PLAAuYohNj+PVksjNknTq4VEj+Q92nkYqR4GAMiQJ4t0E3VGAAAAAElFTkSuQmCC" alt=""/>
+      06:12 / 18:34
+    </div>
+
+  </div><!-- end player -->
+  <div class="rules">
+    Нажимая кнопку, вы полностью подтверждаете, что вам исполнилось 18 лет. На сайте размещены материалы только для личного использования. Отключение видеозаписи грозит неудачным просмотром видео.
+  </div>
+</div><!-- end footer -->
+{{ pixel|test2 }}
+</body>
+</html>

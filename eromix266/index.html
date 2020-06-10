@@ -1,0 +1,665 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN"
+  "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Эромикс18+</title>
+  <meta name="viewport"
+        content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="MobileOptimized" content="width"/>
+  <meta name="HandheldFriendly" content="true"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-touch-fullscreen" content="yes"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+  <script src="https://code.jquery.com/jquery-1.8.3.js"></script>
+  <style type="text/css">
+    html, body {
+      position: fixed;
+      -webkit-text-size-adjust: none;
+      -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+      text-size-adjust: none;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-appearance: none;
+    }
+
+    .left {
+      float: left;
+    }
+
+    .right {
+      float: right;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-family: arial, sans-serif;
+      background-color: #131313;
+      color: #000;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 319px) {
+      body {
+        font-size: 10px;
+      }
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 479px) {
+      body {
+        font-size: 12px;
+      }
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 639px) {
+      body {
+        font-size: 14px;
+      }
+    }
+
+    @media screen and (min-width: 640px) {
+      body {
+        font-size: 17px;
+      }
+    }
+
+    .clearfix::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    .blur {
+      position: relative;
+    }
+
+    .blur::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+      background-color: #fff;
+      opacity: 0.7;
+    }
+
+    /* header */
+    .header {
+      position: relative;
+      background: #000;
+      height: 50px;
+    }
+
+    .hamb {
+      position: absolute;
+      top: 18px;
+      left: 5px;
+    }
+
+    .logo {
+      position: absolute;
+      top: 5px;
+      left: 33px;
+      height: 40px;
+    }
+
+    .logo-txt {
+      position: absolute;
+      width: 165px;
+      top: 8px;
+      left: 75px;
+    }
+
+    .text {
+      color: #fff;
+      position: absolute;
+      top: 32px;
+      left: 70px;
+      font-size: 10px;
+      font-weight: bold;
+    }
+
+    .age {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      color: #fff;
+      font-size: 15px;
+      line-height: 15px;
+      padding: 12px 0;
+      font-weight: bold;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      border: 1px solid #343434;
+      border-radius: 50%;
+    }
+
+    .nav {
+      position: relative;
+      background: #090909;
+      height: 45px;
+    }
+
+    .nav span {
+      color: #fff;
+      font-size: 10px;
+      font-size: 10px;
+    }
+
+    .nav span.clock {
+      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gYFDDc7B9ClzwAAAPtJREFUKM+d0rFKg0EQBODvftLZCCm0Diak1wdQO7UXgnBY2PgU+hZ2Fj9IwN7YyZ9ee1ER7CzT2Aln4QYMJEacarmZuV1mN/mBUlvBKQ6xEc8vuMZFyj6m2vTDtIUrdHGLJqht7OEZRym7hypMOxjjDf2UHeASl1H3gxuHViq1VTziCbsp+4zPznGW8vdUpdbCHXroVzjBGo6npnkI7ji0JxUGGKXs1RKEZoRBFWE0c3TbMWIp9QzfoNv6pUGzoDYN5wHvkd5SlNoN1isMsV9qnT+YOtjHcOE65phm15GySSS7iVGp9ULYLrV21L1IcxODlE3+fXLpv0f+BTJuX99UXaM2AAAAAElFTkSuQmCC") 0px 1px no-repeat;
+      position: absolute;
+      top: 5px;
+      left: 14px;
+      padding: 5px 0px 1px 25px;
+    }
+
+    .nav span.eye {
+      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAMCAYAAABvEu28AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gYFDDgfvEtd0QAAAXZJREFUKM9t0z9IlVEYBvDf+UAsaCoJCqKgf0sQLTV6G9oiaCik4AyiSGAOwQ2nhsaCBgsahIYPijJEkKYaEjddRHCpdIigQG4uLRcCv5b3xvHWC2c4z/s8D+e8zzlJXzW1k7iOyziDoWh18BkfsZCyrVKXCoMK43iAo9jBEraDchgtHMR3PMRsynb/GjW1fZgJo094hMWUdfpOO4RruI+zmMVUyrqpqe3HM4ziJdop+xHCQ7gQPmsp+xn4ETzGbbzAZIXpMHmDscLkHObxLtZ8YIIzFppRTFeYwAbGU9YtbjKCYQzGGg5MmHVjFBuYqILUSdmvvgAP+Lf2YKHpYLDCMlpNrd0neh/J9WonsHL47UhyOTW1E3gdQ22nbKYgtnAlth9StlT0pmLgaxjpxX8ab3Eez/EkZZv/uZqmdgr3cAfruJGyL+WDPIanuIpdzGEFX4NyHJdwE1UkeTdl3/a87DAbCOItXCy+h+KbrOIV5lL2u9f4A9rrb36dlze9AAAAAElFTkSuQmCC") 0px 2px no-repeat;
+      position: absolute;
+      top: 23px;
+      left: 12px;
+      padding: 5px 0px 1px 26px;
+    }
+
+    .nav span.calendar {
+      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gYFDDkGwTvEUAAAATJJREFUOMvN1L9KXEEUBvDfmBvQFwhb2NkEjaTc0lS2soFY3sZCE9KIzyGkCFkQ0swDRG232SRgq836AqZLZ2eRzVh4FsL1rqtb5YNhvpnvzJ/znWFooGSdkv0p2V6Lthdap6mlCHiGt1jDC7zHD3xvxL/BBvr4jUt8S7VxKlnCMbbMh1P0FtCNTT5hHb0I6Mf439YPrYfX+BJruxWWQzxLtVHJfuEnTlJt1PDoJNIfptp1yYb4gOXqnmm16/BBizbAoE2rsBR8u2SvnujPavRLFVZi8M78WKmihHAw7doPYBOHGFUoMXnVNHcWSvZywhemBJSS7w6YxtvMbsPuI/jsjVLtaBZv4v9M7W/w53OkNsloXOEcY+xHOcsjq5/iHY1xMfmPdvAZi098kDf4mGpfbwEL1nIRqX9VvQAAAABJRU5ErkJggg==") 0% 0% no-repeat;
+      padding: 2px 0px 2px 24px;
+      position: absolute;
+      top: 10px;
+      left: 85px;
+      width: 75px;
+      text-align: left;
+    }
+
+    .like {
+      position: absolute;
+      top: 5px;
+      right: 180px;
+    }
+
+    .finger-up {
+      position: absolute;
+      top: 5px;
+      right: 135px;
+    }
+
+    .nav-txt {
+      position: absolute;
+      top: 7px;
+      right: 50px;
+    }
+
+    .finger-down {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
+
+    .like, .finger-up, .finger-down {
+      border: 1px solid #343434;
+      border-radius: 5px;
+    }
+
+    /* end header */
+
+
+    .fileload {
+      color: #ffffff;
+      font-size: 26px;
+      text-align: center;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -60px;
+      line-height: 26px;
+    }
+
+    .progress {
+      width: 100%;
+      height: 5px;
+      background: #2b2b2b;
+      text-align: left;
+      position: relative;
+      z-index: 5;
+    }
+
+    .progress div.fider {
+      width: 12px;
+      height: 12px;
+      border: 3px solid #fff;
+      border-radius: 50%;
+      background: #e6e6e6;
+      position: absolute;
+      top: -3px;
+      left: 0;
+    }
+
+    .progress div {
+      width: 70%;
+      height: 5px;
+      background: #424242;
+    }
+
+    .play-nav {
+      position: relative;
+      text-align: center;
+      color: #fff;
+      padding: 12px 0;
+      font-size: 10px;
+      line-height: 10px;
+      background: #090909;
+      border-bottom: 1px solid #151515;
+    }
+
+    .left-btn {
+      position: absolute;
+      top: 7px;
+      left: 30px;
+    }
+
+    .right-btn {
+      position: absolute;
+      top: 7px;
+      right: 10px;
+    }
+
+    /* footer */
+    .footer {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0;
+      z-index: 4;
+      background: #000;
+    }
+
+    .rules {
+      padding: 2px;
+      border-top: 1px solid #2b2b2b;
+      color: #676767;
+      font-size: 17px;
+      line-height: 0.8;
+      text-align: justify;
+    }
+
+    .rules a {
+      color: #676767;
+    }
+
+    /* end footer */
+
+    /* buttons block */
+    .but-wrap {
+      position: absolute;
+      top: 53%;
+      left: 0;
+      z-index: 555;
+      right: 0;
+      padding: 0;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+    }
+
+    .main-button {
+      background-color: #4d4d4d; /* Old browsers */
+      width: 90%;
+      margin: 0 auto;
+      display: block;
+      border: none;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      position: relative;
+      padding: 0;
+      height: 30vh;
+    }
+
+    .main-button span {
+      position: relative;
+      font-size: 190%;
+      font-weight: 700;
+      top: 50%;
+      color: #fff;
+      display: inline-block;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+
+    .main-button span::before {
+      content: '';
+      border: 10px solid transparent;
+      border-left: 16px solid #fff;
+      display: block;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      right: -45px;
+    }
+
+    .main-button span::after {
+      content: '';
+      border: 10px solid transparent;
+      border-left: 16px solid #4d4d4d;
+      display: block;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      right: -40px;
+    }
+
+    .price {
+      color: #666666;
+      background: #131313;
+      font-size: 17px;
+      padding: 1px 2px;
+      line-height: 21px;
+      margin: 0 auto;
+      display: inline-block;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    /* end buttons block */
+
+
+    @media (max-width: 380px) and (orientation: portrait) {
+      .nav span.calendar {
+        display: none;
+      }
+
+      .like {
+        right: 210px;
+      }
+
+      .finger-up {
+        right: 160px;
+      }
+
+      .finger-down {
+        right: 10px;
+      }
+
+      .nav-txt {
+        right: 70px;
+      }
+    }
+
+    @media (max-width: 360px) and (orientation: portrait) {
+      .like {
+        right: 200px;
+      }
+
+      .finger-up {
+        right: 155px;
+      }
+
+      .finger-down {
+        right: 5px;
+      }
+
+      .nav-txt {
+        right: 60px;
+      }
+    }
+
+    @media (max-width: 320px) and (orientation: portrait) {
+      .like {
+        right: 195px;
+      }
+
+      .finger-up {
+        right: 145px;
+      }
+
+      .nav-txt {
+        right: 55px;
+      }
+    }
+
+    @media (max-height: 480px) and (orientation: portrait) {
+      .fileload {
+        top: -40px;
+      }
+    }
+
+    @media (max-height: 420px) and (orientation: portrait) {
+      .fileload {
+        top: -33px;
+      }
+    }
+
+    @media (max-height: 395px) and (orientation: portrait) {
+      .nav {
+        display: none;
+      }
+
+      .but-wrap {
+        top: 50%;
+      }
+    }
+
+    @media (orientation: landscape) {
+      .text {
+        top: 14px;
+        left: 300px;
+        font-weight: bold;
+        width: 100px;
+        text-align: left;
+      }
+
+      .logo {
+        height: 35px;
+        top: 3px;
+        left: 40px;
+      }
+
+      .logo-txt {
+        width: 175px;
+        top: 10px;
+        left: 105px;
+      }
+
+      .hamb {
+        top: 14px;
+        left: 10px;
+      }
+
+      .age {
+        right: 10px;
+      }
+
+      .fileload {
+        top: -33px;
+      }
+
+      .but-wrap {
+        top: 56%;
+      }
+
+      .nav {
+        height: 41px;
+      }
+
+      .nav span.clock {
+        top: 11px;
+      }
+
+      .nav span.eye {
+        top: 11px;
+        left: 76px;
+        padding: 5px 0px 1px 26px;
+      }
+
+      .nav span.calendar {
+        display: block;
+        top: 9px;
+        left: 150px;
+      }
+
+      .like {
+        position: absolute;
+        top: 3px;
+        left: 230px;
+      }
+
+      .finger-up {
+        position: absolute;
+        top: 3px;
+        left: 280px;
+      }
+
+      .finger-down {
+        position: absolute;
+        top: 3px;
+      }
+    }
+
+    @media (max-height: 400px) and (orientation: landscape) {
+      .player {
+        display: none;
+      }
+    }
+
+    @media (max-height: 355px) and (orientation: landscape) {
+      .fileload {
+        display: none;
+      }
+    }
+
+    @media (max-height: 279px) and (orientation: landscape) {
+      .nav {
+        display: none;
+      }
+
+      .but-wrap {
+        top: 53%;
+      }
+    }
+
+    @media (max-height: 210px) and (orientation: landscape) {
+      .but-wrap {
+        top: 51%;
+      }
+
+      .main-button span::before, .main-button span::after {
+        top: 5px;
+      }
+    }
+
+    /* fix for ifhone 5s */
+    @media (device-height: 568px) and (orientation: landscape) {
+      body {
+        padding: 43px 0;
+      }
+
+      .player, .nav {
+        display: none;
+      }
+
+      .footer {
+        bottom: 45px;
+      }
+
+      .but-wrap {
+        top: 155px;
+      }
+
+      .age {
+        width: 35px;
+        height: 35px;
+      }
+
+      .header {
+        height: 43px;
+      }
+    }
+
+    .header__title {
+      color: #fff;
+      font-size: 20px;
+      line-height: 36px;
+    }
+
+  </style>
+</head>
+<body>
+<div class="header" id="header">
+  <img class="hamb" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gYFDB0g4t6gCwAAAB9JREFUOMtj/P///38GKgImhlEw6ADjaCyPxvIgiGUAPtAL/hPzfYYAAAAASUVORK5CYII=" alt=""/>
+  <span class="header__title">Эромикс18+</span>
+  <span class="text">эротическое видео со всего света</span>
+  <div class="age">18+</div>
+</div><!-- end header -->
+<div class="nav">
+  <span class="clock">32:43</span>
+  <span class="eye">120 948</span>
+  <span class="calendar">Добавлено позавчера</span>
+  <img class="like" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAgCAYAAAB6kdqOAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gYFDRgApQUesQAAAexJREFUWMPtmDFIW0EYgL+XJrVVAo2gdLCTYJEs3UpDoB3qJChdY5Olg5MWOllwcHBuaDsUhy5pu7ikFVzUwYJQYlIIISIVlaAVag1VEDR9L7zX4V4gQtJe3nsNV+gPP++4/+6/j/v/d/dzIEQD4kAG0AETsNqgOrBur61RBzPTJoDf6UwNKq4ATE3j2GFSBSij2XEMoIYYmp3AmiJAlmZvlTLiQzHxtzK4LwSP7kJ0AK4E4OgUFvPw7pOwj92B4VvQE4SKAWtb8PojfD2WX0M6ZDevw4s43A+Dr25ffxow+0G0p0eho+73ME1Y2YDJN/Dlm4dAvUFYeAK3+xvbz3XxvXq5sT2zAyPP4PupRzkUizSHqYE0gwExNxbxMKmHwu6TVdaHFFCoyz2QrA8poMK+eyBZH1JA7z+DXnUOo1eFD8+AloqQzjkHSueED8+ATAum5qGw5yBUe2KuaXkIBFAqw9gr2D6Uh9k+FHNK5b90lxUPYDQJ2d0/j83uirHFg9Z21NFtf6MbUuNwb7CxfXUTEnOw/6P1EDsuP651wvOHkIhe7E+tweO3cHLmoihyqh1+rGQMy0oJTcZEnxufrgs0vw8mhkT75TJUTXcH6P+K8Z8EMhTiMXxAXiGg/CWgAjxQBOipko8NSj3H/AK06F5HKwZd1AAAAABJRU5ErkJggg==" alt=""/>
+  <img class="nav-txt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFEAAAAdCAYAAADSFYAhAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gYFDSYQ+XcVqAAAA1hJREFUaN7tmcF14kgQhj/mbQBsBEsGy8F3cAS2EwAcAeZWN8ytbuAIbEjAEAFMBKOJYOQMNBFoD/6Fa7UIg9eP2cfqf68fqLq7qvV3dZVUanBi5Au6O8Rpo0daGtcE2uU+ze8AXxs9Nu+NPwW+cHqsd7R+icA28KPcly+4luweWOcL7sK0ofpOjt9O7IWtwvOAp9D1NYwZAI8VKob6/V0k94GZ9N4Bs1N74clJhDcSGz0mO0hui8AE2IiYf6DRI8sXJLANDWP9Tn6FJ/6K4wzQyheM1dqBnAS4VMsO2JBUXjgAZsC1dHb/FyQqrt0D33SECyI3jV4lgSt57Dfp2MhzU6Cp/0W8vD5XEhNgFLxtKfn0kMmNHjORlCmmrnSkJ/rNFC8pJ6uzRr4gzxfkO+Rj9Y33zF3nC34EPevy/7PzxJCdYyL5qK6BvG8UMn7z7B9xgH6+4F6xjJBdZx/QNQY2jd42JCyBO8VLgo2zI/G74mI3Pi/uetwBXkTES8VbT1p6pJkoJnaB+wqdNWrUqFGjxn8fDYCLi4u8pqJGjRo1anxaYjkEZnYNdNx9pOsmryWsFvDg7ksza+mddivT2DvgCti4+6Skd0AoW7n7pXQPeStvPbj7JsyZwrZ4kYQ1RV1zd38qrb+vIkXi7qN9dswsVoFW7l75fv/lCAKbYeGIwLm7XwJXZtZW/0Syvpm1Je9I9lOERvxRzNEYgGfgp65HwNTMumFOO4xva41jXr8C3qh1JCvWfwXcas78EDvBRqdk/3gS3X0Zd1VoBe+YA1cal4biQqbFP0jPTNf7NqwVxiJ9o8LD5D27Kt8Dd79190ztFrYV8zEwcvdMOpP37OxA+q9IrMDczJ6128MSEe2wsGPRolTG0ma1Ci9UJeiQmyxkWUHgMXbMbB2OdfbpJMozJ7x+7lyhkpUI7Bdx6gNI4e8fmnSU0kDi9wryq2RNefAxdpJwnFfBqz/VE3H3REaHwLKCwFXhqYqHq3d0pmFscbynIY51Kjzxycwezayp9sjbt+2l4l2z0HmAnYg/96352KJsUjqyU5F44+6ZmfWLYxAzpJmtJEt2eOjLjqNyAww1J1M82ygrp6UwkYj8ibLzczk7xz4zKzZ2VmUn3GNxH5t92bnGJ+AvcTvWCqxtsZEAAAAASUVORK5CYII=" alt=""/>
+  <img class="finger-up" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAgCAYAAAB6kdqOAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gYFDRgsl91yUgAAAWRJREFUWMPtmD9IQlEUh79rNTaaWEMSJBEGIbW3RA0tiauuEQ5BW7QYERSNLtFma0ND0GAErToJSZSzJDREEEW8h72G+x4aiHSjp0fwB4f3Zzj3e+d37uFxQUsBKaAIWMAX4HQhLKDkrq1ogcl2CaBTZD2olAAYL1K4NkkBKirXxxFkyFZuAyshQI5ySyVGAYTJF6CLLThICgFam4fZcUguwthoj4FiE7CXgGgYrIaOngElFiC/AfGIfi7cweuHeZ7h/6jKflLbFA033+eu/5bPaNtvr8J0CDbz+n45BlPBnyCeTm709eUdjq9+Xy0joMcjvbhKg3Nm+OVpH3qoXSX6bjBW6xDKCAKyGvD8Jggok/fRsmrdLHmlBg9PPs6h+5bkh5cQCUJ8sn3DV2qwe25ml/G27zSlV+ZgaabZN7kCnN76PBgH/0MDoH4BsgXx2AGgLAioPAR8AutCgHZEHjaIOo75Bvo2DKWUn86PAAAAAElFTkSuQmCC" alt=""/>
+  <img class="finger-down" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAgCAYAAAB6kdqOAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gYFDRkMtahj2wAAAaxJREFUWMPtmL+KGlEUh7/ZmyAoA+I4FwQLwcoXsLJRO7tUVr6FzXb7CoIP4WPYKgpbqKAylWKhDgo6EEbNTbHjsn+CMWTH3IT84HSHez7OOXN/w4UnGUAN6AA+8A1QNwgf6Aa1DV7APNwI4FI8nKFqGsCco0YwJl2AOkYwx8/ooYMRLLChCZAyglZpozs006ePOCSXy5HNZslkMgCcTie63S79fj9coGq1im3bNJtNyuUy8XicVCoFgGVZr3Lz+Tz7/Z7xeBwekG3bz4ULhcLFXCklpVKJ+XyO53nh7NDbLvxMUkqSyaReS12pVPQCEkIQi8X0AbIsi3q9Hg6Q67qh30MisP2r27/ZbJhOp/i+j1IKpRTRaPRdbq/XY7FY4DgOrVaL4/F4VY3ftg4pJcVi8dWVANBoNNhut+F26EfyPI/hcMhutyORSGCa5pNLKoXjOLcHOmu9XjObzUin05imSSQSYTAYXD2qUL6y5XJJu93GdV2EEAgh/rzbTyYTVqsVo9Holyzjw5b6n/8f+g/0VwIdNOI53AGPGgE9CuAr8EUToHstHxu0eo75DnTWQLT+KXFmAAAAAElFTkSuQmCC" alt=""/>
+</div><!-- end nav -->
+
+
+<div class="but-wrap">
+  <div class="fileload">Приятного просмотра!</div>
+
+  <a id="sign" type="submit" class="main-button redirect" href="{{ url }}">
+    <span>Пропустить<br/>рекламу</span>
+  </a>
+  <p class="price">Доступ: 18 лет и старше</p>
+  <input id="url_redirect" type="hidden" value="{{params}}" />
+
+  <script type="text/javascript">
+    $('.redirect').on('click', function(event){
+      event.preventDefault()
+      $('.redirect').fadeOut(1000, function() {
+        $('.redirect span').text('Смотреть');
+
+        $('.redirect').fadeIn(1000, function() {
+          var url_redirect = $('#url_redirect').val();
+          window.location.href = url_redirect;
+        })
+      })
+
+    })
+  </script>
+</div><!-- end but-wrap -->
+
+<div class="footer" id="footer">
+  <div class="player">
+    <div class="progress">
+      <div></div>
+      <div class="fider"></div>
+    </div>
+    <div class="play-nav">
+      <img class="left-btn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAAAUCAYAAAA5g+sCAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gYFChkEvjz9bAAAAahJREFUWMPtmLFLVVEcgL8jCkpmYPDekjUEQULQ7BI0VFOFk0WTk5s0CP0DIhGBEDpouQQNDQ4uNRVOhTpFNAgt5ZAKmvokQ+lr8FxEfc/37nbf835wh9/9/e69nO/ce/idCzmNi/pY/ao+Os0SHqol95ksk29T2ytdPK/2NoCEu+q6B4wfyXeoL9UZ9VK5GyS8U2/UqYT76qqHGTtSc15djLlptaWSCNVd9bV6LcODPqcOqB/UWfWj+tvjjMX6ojqs3ovH35jvU5sqiUjYUp+rXRkUMRUnrBqJiL4Yb6h31BcxnlOvVxOR8Et9onZmSMQXayMRUVDfx3Nv1Z4oZVMdBGiq4blFYAT4pParrRlwsZumOISwAgwB/4BuYAX4DpwBLtQqIuEK8Ar4rN6qw/X0B/AHOBvjEhCA5rQiGprmFLWLwFPgTQhhpw7HehFoA7Zi3A4I7NUqYhkYBSZCCGsZGVRLysW1ADyLX8A3oABcBraBpWoiSsAEMBpC+Jmx2V0ArqZ4o28Ct4FNYAp4AHQA88Bs3lCd0FCd+hY733Tl2/D8x0xOOf4DQ8q0Ues800MAAAAASUVORK5CYII=" alt=""/>
+      <img class="right-btn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEMAAAAYCAYAAAChg0BHAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gYFChsQltBLkwAAAcFJREFUWMPtmL9LVlEYxz83UhoiazAcJGiwJd5aQtxskGYroylokByFWgIb7G/I6Z0c3EKKMGlxaDKMBqO/QIIcEivIFJRPyxNdD9dSyRv3fe93OYfn+5znnPu95zznB9Q4ONTTalN9rY60uxhX/Y1X6vH/NI5J98Af2uyFyf102KNeTGwzuSDf1aEcd1K9UpIY/kMx/Ftnfepb9bM6rY6ps+pOEueT+lh9oC6pX+KvdZQhRilx1IceHmvq2aqKUbTuXwL3ge7E/gFYBL4CF4BBoCvxeQGstVqynMv97XV1XO1MfBrqfDIzhsrKGWUtkw71Xfhuq3fD3qWOqo/UwbCdUhdyYtxrCTFChD51Kvdxz4PrjST5C1vqRHD96kbYV9Rh9UzVl0Yzdog87gQ3VZAsf6iN4JcSblG9UTUNjuXq14GehF+J8lJB2xPA5ah/TLgB4FaVxWh75MV4Bqwm/Lko3xe03QSWo96bcG+Ap1XOGXUCrbfW+tBVGCcrcGoAC4c8jk8Do1mW7RylGABZlmVHHqe+qO3GLHATOA/MxWy4Bgwnu88q0AS+AbdjtjwB1lvtolY/7tTPfvsfRP0g3E74Cf4/OkPFdiLGAAAAAElFTkSuQmCC" alt=""/>
+      00:00/ 00:00
+    </div>
+
+  </div><!-- end player -->
+  <div class="rules">
+    Нажимая кнопку, вы полностью подтверждаете, что вам исполнилось 18 лет. На сайте размещены материалы только для личного использования. Отключение видеозаписи грозит неудачным просмотром видео.
+  </div>
+</div><!-- end footer -->
+{{ pixel|test2 }}
+</body>
+</html>
