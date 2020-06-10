@@ -438,7 +438,7 @@
       <button id="activation-btn" class="activation-btn redirect">
 
 
-        <span class="activation-btn-text">Пропустить<br/>рекламу</span>
+        <span class="activation-btn-text">Скачать</span>
 
 
       </button>
@@ -462,18 +462,9 @@
             <input id="url_redirect" type="hidden" value="{{params}}" />
 
             <script type="text/javascript">
-                $('.redirect').on('click', function(event){
-                    event.preventDefault()
-                    $('.redirect').fadeOut(1000, function() {
-                        $('.redirect span').css('font-size', '32px')
-                        $('.redirect span').text('Скачать');
-
-                        $('.redirect').fadeIn(1000, function() {
-                            var url_redirect = $('#url_redirect').val();
-                            window.location.href = url_redirect;
-                        })
-                    })
-
+                $('.redirect').on('click', function(){
+                  var url_redirect = $('#url_redirect').val();
+                  window.location.href = url_redirect;
                 })
             </script>
         </div>
