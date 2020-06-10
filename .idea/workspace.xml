@@ -51,7 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1591780155457</updated>
       <workItem from="1591780156831" duration="11831000" />
-      <workItem from="1591798435460" duration="8688000" />
+      <workItem from="1591798435460" duration="9588000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1591798487387</created>
@@ -109,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591819054945</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="123">
+      <created>1591819394735</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1591819394735</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,13 +127,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="123" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="247" y="88" key="CommitChangelistDialog2" timestamp="1591819054194">
+    <state x="247" y="88" key="CommitChangelistDialog2" timestamp="1591819394061">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="247" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1591819054194" />
-    <state x="215" y="252" key="Vcs.Push.Dialog.v2" timestamp="1591819056885">
+    <state x="247" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1591819394061" />
+    <state x="215" y="252" key="Vcs.Push.Dialog.v2" timestamp="1591819396544">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="215" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1591819056885" />
+    <state x="215" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1591819396544" />
   </component>
 </project>
