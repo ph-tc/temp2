@@ -298,9 +298,10 @@
       top: 50%;
       color: #fff;
       display: inline-block;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
     }
 
     .main-button span::after {
@@ -324,6 +325,7 @@
       margin: 0 auto;
       display: inline-block;
       font-family: 'Open Sans', sans-serif;
+      background-color: #000;
     }
 
     /* end buttons block */
@@ -344,9 +346,6 @@
     }
 
     @media (max-height: 360px) and (orientation: portrait) {
-      .main-button span {
-        top: 12%;
-      }
 
       .player {
         display: none;
@@ -393,10 +392,6 @@
     @media (max-height: 210px) and (orientation: landscape) {
       .but-wrap {
         top: 51%;
-      }
-
-      .main-button span {
-        top: 10%;
       }
 
       .brd {

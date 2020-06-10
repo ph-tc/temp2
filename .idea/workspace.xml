@@ -3,21 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="63881117-cc37-45a2-a12d-9692d16310fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/612/612/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/612/612/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eromix265/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/eromix265/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eromix266/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/eromix266/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eromix267/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/eromix267/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eromix291/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/eromix291/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eromix292/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/eromix292/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eromix294/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/eromix294/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eromix295/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/eromix295/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eromix329/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/eromix329/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eromix331/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/eromix331/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eromix332/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/eromix332/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eromix333/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/eromix333/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eromix419/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/eromix419/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eromix531/bash.exe.stackdump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eromix531/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/eromix531/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1591780155457</updated>
       <workItem from="1591780156831" duration="11831000" />
-      <workItem from="1591798435460" duration="5256000" />
+      <workItem from="1591798435460" duration="7097000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1591798487387</created>
@@ -88,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591807014664</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="123">
+      <created>1591815652124</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591815652124</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,13 +99,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="123" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="247" y="88" key="CommitChangelistDialog2" timestamp="1591807014015">
+    <state x="247" y="88" key="CommitChangelistDialog2" timestamp="1591815649563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="247" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1591807014015" />
-    <state x="215" y="252" key="Vcs.Push.Dialog.v2" timestamp="1591807018973">
+    <state x="247" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1591815649563" />
+    <state x="215" y="252" key="Vcs.Push.Dialog.v2" timestamp="1591815666512">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="215" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1591807018973" />
+    <state x="215" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1591815666512" />
   </component>
 </project>

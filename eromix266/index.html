@@ -334,15 +334,16 @@
     }
 
     .main-button span {
-      position: relative;
+      position: absolute;
       font-size: 190%;
       font-weight: 700;
       top: 50%;
       color: #fff;
       display: inline-block;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
     }
 
     .main-button span::before {
@@ -562,10 +563,6 @@
     @media (max-height: 210px) and (orientation: landscape) {
       .but-wrap {
         top: 51%;
-      }
-
-      .main-button span::before, .main-button span::after {
-        top: 5px;
       }
     }
 
