@@ -14,6 +14,8 @@
   <script src="https://code.jquery.com/jquery-1.8.3.js"></script>
   <style type="text/css">
     * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
       box-sizing: border-box;
       -webkit-appearance: none;
       position: relative;
@@ -22,6 +24,8 @@
     html, body {
       position: fixed;
       -webkit-text-size-adjust: none;
+      -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
       text-size-adjust: none;
       height: 100%;
       width: 100%;
@@ -132,6 +136,7 @@
       right: 5px;
       color: #cccccc;
       border: 1px solid #cccccc;
+      -webkit-border-radius: 50%;
       border-radius: 50%;
       font-size: 12px;
       line-height: 11px;
@@ -147,6 +152,7 @@
       left: 0;
       right: 0;
       bottom: 28%;
+      -webkit-border-radius: 0;
       border-radius: 0;
       width: 100%;
       margin: 0 auto;
@@ -275,11 +281,11 @@
     }
 
     .rules, .rules a {
-			padding: 2px;
+      padding: 2px;
       color: #666666;
       font-size: 17px;
       line-height: 0.8;
-			text-align: justify;
+      text-align: justify;
     }
 
     /* end footer */
@@ -303,6 +309,7 @@
       margin: 0 auto;
       display: block;
       border: 5px solid #fff;
+      -webkit-border-radius: 10px;
       border-radius: 10px;
       position: relative;
       padding: 0;
@@ -316,6 +323,8 @@
       left: 0;
       color: #000;
       display: inline-block;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
       transform: translateY(-50%);
     }
 
@@ -514,14 +523,14 @@
       }
     }
 
-		.logo-title {
-			padding-right: 10px;
-			font-size: 16px !important;
-			font-weight: 700;
-			text-transform: uppercase;
-			line-height: 24px;
-			vertical-align: top;
-		}
+    .logo-title {
+      padding-right: 10px;
+      font-size: 16px !important;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 24px;
+      vertical-align: top;
+    }
 
   </style>
 </head>

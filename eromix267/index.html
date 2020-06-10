@@ -16,6 +16,8 @@
     html, body {
       position: fixed;
       -webkit-text-size-adjust: none;
+      -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
       text-size-adjust: none;
       height: 100%;
       width: 100%;
@@ -24,6 +26,8 @@
     }
 
     * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
       box-sizing: border-box;
       -webkit-appearance: none;
     }
@@ -96,7 +100,7 @@
       position: relative;
       background: #f2f2f2;
       height: 40px;
-			text-align: left;
+      text-align: left;
     }
 
     .header span {
@@ -104,9 +108,9 @@
       top: 3px;
       left: 10px;
       height: 33px;
-			font-size: 20px;
-			font-weight: 700;
-			line-height: 30px;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 30px;
     }
 
     .age {
@@ -122,6 +126,7 @@
       height: 28px;
       text-align: center;
       border: 2px solid #000;
+      -webkit-border-radius: 50%;
       border-radius: 50%;
     }
 
@@ -246,9 +251,9 @@
 
     .rules {
       color: #939393;
-			text-align: justify;
-			line-height: 0.9;
-			font-size: 17px;
+      text-align: justify;
+      line-height: 0.9;
+      font-size: 17px;
     }
 
     .rules a {
@@ -276,6 +281,7 @@
       margin: 0 auto;
       display: block;
       border: none;
+      -webkit-border-radius: 5px;
       border-radius: 5px;
       position: relative;
       padding: 0;
@@ -289,6 +295,8 @@
       top: 50%;
       color: #fff;
       display: inline-block;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
       transform: translateY(-50%);
     }
 
